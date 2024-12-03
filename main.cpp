@@ -1,7 +1,7 @@
 ﻿// lab3.cpp: определяет точку входа для приложения.
 //
 
-#include "lab3.h"
+#include "sorting.h"
 
 using namespace std;
 
