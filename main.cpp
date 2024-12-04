@@ -1,12 +1,14 @@
-﻿// lab3.cpp: определяет точку входа для приложения.
-//
-
-#include "sorting.h"
+﻿#include "sorting.h"
 
 using namespace std;
 
 int main()
 {
-	cout << "Hello CMake." << endl;
+	vector<int> vec1{6,5,4,3,2,1};
+	stats<int> res;
+	res = BublleSort(vec1);
+	cout << res.comparison_count << " and " << res.copy_count << endl;
+
+
 	return 0;
 }
