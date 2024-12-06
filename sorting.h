@@ -37,4 +37,28 @@ stats<T> BublleSort(vector<T>& vector) {
 }
 
 
+template <typename T>
+stats<T> CombSort(vector<T>& vector) {
+    stats<T> res{};
+    int step = vector.size() - 1;
+    bool flag = false;
 
+    while (step > 1 or flag) {
+        if (step > 1) {
+            step = step * 4 / 5;
+        }
+        flag = false;
+        int i = 0;
+        while (i + step < vector.size()) {
+            res.comparison_count++;
+            if (vector[i] > vector[i + step]) {
+                flag = true;
+                swap(vector[i], vector[i + step]);
+                res.copy_count += 3;
+            }
+            i += step;
+        }
+    }
+
+    return res;
+}
