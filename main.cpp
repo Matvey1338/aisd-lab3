@@ -121,7 +121,6 @@ int main()
     std::cout << "Results saved to comb_sort_results.csv" << std::endl;
     */
 
-    /*
     std::ofstream file("C:/Users/matve/OneDrive/Рабочий стол/project_current_semestr/aisd/lab3/sort_results/pyramid_sort_results.csv");
     file << "Size,Avg Comparisons,Avg Copies,Sorted Comparisons,Sorted Copies,Reverse Comparisons,Reverse Copies\n";
 
@@ -176,7 +175,6 @@ int main()
     }
     file.close();
     std::cout << "Results saved to pyramid_sort_results.csv" << std::endl;
-    */
 
 	return 0;
 }
